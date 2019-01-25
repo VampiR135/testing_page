@@ -12,6 +12,7 @@ require('foundation-sites');
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
+import './lib/jquery.validate.min.js';
 
 
 $(document).foundation();
@@ -37,5 +38,9 @@ jQuery(document).ready(function () {
                 spaceBetween: 30
             }
         }
+    });
+
+    $(".wrap_contacts_form").validate({
+        ignore: ".wrap_no_validate"
     });
 });

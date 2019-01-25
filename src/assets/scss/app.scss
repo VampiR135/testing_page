@@ -194,6 +194,7 @@ p.wrap_title {
   position: relative;
   padding: 1.8% 5% 4.4% 5.9%;
 }
+
 .wrap_interview_slider {
   img {
     display: block;
@@ -260,6 +261,15 @@ p.wrap_title {
 }
 
 .wrap_contacts_form_wrapper {
+  .large-6 {
+    position: relative;
+  }
+  input:not([type="file"]) + label {
+    position: absolute;
+    top: rem-calc(38);
+    left: 5%;
+    width: 90%;
+  }
   textarea,
   input:not([type="file"]) {
     display: block;
